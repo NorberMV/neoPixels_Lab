@@ -66,6 +66,69 @@ void naranja() {                        //Función para cambiar los pixels de ro
 }
 
 
+void verde() {                        //Función para cambiar los pixels de Verde a verde claro
+  for(int i=100; i!=255; i++) {
+    pixels.setPixelColor(1,0,i,0);
+    pixels.setPixelColor(2,0,i,0);
+    pixels.setPixelColor(3,0,i,0);
+    pixels.setPixelColor(4,0,i,0);
+    pixels.setPixelColor(5,0,i,0);
+    pixels.setPixelColor(6,0,i,0);
+    pixels.setPixelColor(7,0,i,0);
+    pixels.setPixelColor(8,0,i,0);
+    pixels.show();
+    delay(20);      
+    }
+    
+  
+  for(int j=0; j!=154; j++) {
+    pixels.setPixelColor(1,0,255,j);
+    pixels.setPixelColor(2,0,255,j);
+    pixels.setPixelColor(3,0,255,j);
+    pixels.setPixelColor(4,0,255,j);
+    pixels.setPixelColor(5,0,255,j);
+    pixels.setPixelColor(6,0,255,j);
+    pixels.setPixelColor(7,0,255,j);
+    pixels.setPixelColor(8,0,255,j);
+    
+    pixels.show();
+    delay(20);      
+  }
+    
+
+  
+  for(int i=255; i>100; i--) {
+    pixels.setPixelColor(1,0,i,154);
+    pixels.setPixelColor(2,0,i,154);
+    pixels.setPixelColor(3,0,i,154);
+    pixels.setPixelColor(4,0,i,154);
+    pixels.setPixelColor(5,0,i,154);
+    pixels.setPixelColor(6,0,i,154);
+    pixels.setPixelColor(7,0,i,154);
+    pixels.setPixelColor(8,0,i,154);
+    
+    pixels.show();
+    delay(30);
+  }
+
+for (int i=154; i>=0; i--) {
+    pixels.setPixelColor(1,0,100,i);
+    pixels.setPixelColor(2,0,100,i);
+    pixels.setPixelColor(3,0,100,i);
+    pixels.setPixelColor(4,0,100,i);
+    pixels.setPixelColor(5,0,100,i);
+    pixels.setPixelColor(6,0,100,i);
+    pixels.setPixelColor(7,0,100,i);
+    pixels.setPixelColor(8,0,100,i);
+    
+    
+    pixels.show();
+    delay(30);
+  }
+  
+  return 0;
+}
+
 void loop() {
 
   // For a set of NeoPixels the first NeoPixel is 0, second is 1, all the way up to the count of pixels minus one. 
