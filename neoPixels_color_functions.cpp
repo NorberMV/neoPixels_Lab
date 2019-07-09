@@ -135,6 +135,9 @@ void loop() {
  if( contador <10) {
   naranja();
  }
+ else if ( contador >=10) {
+   verde();
+ }
  
   Serial.println("Tolis");
   Serial.println(contador);
